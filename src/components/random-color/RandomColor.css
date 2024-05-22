@@ -7,6 +7,20 @@
   max-width: 100%;
 }
 
-.container button:focus {
-  outline: none;
+.button-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.color-contents {
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  color: #fff;
+  font-size: 48px;
+  margin-top: 50px;
+  width: 100vw;
+  flex-direction: column;
+  gap: 20px;
 }
