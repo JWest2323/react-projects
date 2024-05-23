@@ -1,6 +1,5 @@
 import "./RandomColor.css";
 import { useState, useEffect } from "react";
-import React from "react";
 
 const RandomColor = () => {
   const [colorType, setColorType] = useState("hex");
@@ -20,6 +19,7 @@ const RandomColor = () => {
     }
     setColor(hexColor);
   };
+  
 
   const handleCreateRandomRGBColor = () => {
     const r = randomUtil(256);
