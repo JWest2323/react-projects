@@ -1,0 +1,30 @@
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.image-content {
+  display: flex;
+}
+
+.current-image {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.chevron-container svg {
+  height: 50px;
+  width: 50px;
+  margin: 12px;
+}
