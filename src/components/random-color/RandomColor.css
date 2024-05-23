@@ -5,6 +5,7 @@
   align-items: center;
   width: 100vw;
   max-width: 100%;
+  padding: 12px auto;
 }
 
 .button-container {
@@ -19,8 +20,8 @@
   align-items:  center;
   color: #fff;
   font-size: 48px;
-  margin-top: 50px;
+  margin-top: 10px;
   width: 100vw;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
 }
