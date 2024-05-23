@@ -8,7 +8,7 @@ const App = () => {
     <div>
       {/* <Accordion /> */}
       {/* <RandomColor /> */}
-      <StarRating numOfStars={5} />
+      <StarRating numOfStars={8} />
     </div>
   )
 }
