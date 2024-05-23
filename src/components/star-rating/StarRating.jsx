@@ -2,7 +2,7 @@ import "./StarRating.css";
 import { FaStar } from "react-icons/fa";
 import { useState } from "react";
 
-const StarRating = ({ numOfStars = 5 }) => {
+const StarRating = (numOfStars = 5) => {
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(0);
 
