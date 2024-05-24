@@ -11,7 +11,7 @@ const App = () => {
       {/* <RandomColor /> */}
       {/* <StarRating numOfStars={8} /> */}
 
-      <ImageCarousel query='nature' />
+      <ImageCarousel query='deep space' />
     </div>
   )
 }

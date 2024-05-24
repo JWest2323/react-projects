@@ -57,7 +57,7 @@ const ImageCarousel = ({ query }) => {
         console.log("something went wrong!");
       });
     setLoading(false);
-  }, []);
+  }, [query]);
 
   if (loading) {
     return <div>Loading data ! Please wait</div>;
