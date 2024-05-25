@@ -6,6 +6,7 @@ const LoadMoreButton = () => {
   const [error, setError] = useState(null);
   const [products, setProducts] = useState([]);
   const [count, setCount] = useState(0);
+  const [disabled, setDisabled] = useState(false);
 
   const fetchProducts = async () => {
     try {
@@ -19,12 +20,10 @@ const LoadMoreButton = () => {
       const result = await response.json();
 
       if (result && result.products && result.products.length) {
-        setProducts(result.products);
+        setProducts(prevData => [...prevData, ...result.products]);
         setLoading(false);
       }
-      console.log(result);
     } catch (error) {
-      console.log(error);
       setLoading(false);
     }
   };
@@ -35,7 +34,11 @@ const LoadMoreButton = () => {
     } catch (error) {
       setError(error);
     }
-  }, []);
+  }, [count]);
+
+  useEffect(() => {
+    if (products && products.length === 100) setDisabled(true);
+  }, [products]);
 
   if (isLoading) {
     return <div>Loading data ! Please wait</div>;
@@ -46,17 +49,27 @@ const LoadMoreButton = () => {
       <div className="product-container">
         {products &&
           products.length > 0 &&
-          products.map(product => {
+          products.map((product, index) => {
             return (
-              <div className="product" key={product.id}>
-                <img src={product.thumbnail} alt={product.name} />
+              <div className="product" key={index}>
+                <img src={product.thumbnail} alt={product.title} />
                 <p>{product.title}</p>
               </div>
             );
           })}
       </div>
       <div className="button-container">
-        <button>Load More Products</button>
+        <button
+          disabled={disabled}
+          onClick={() => setCount(count => count + 1)}
+        >
+          Load More Products
+        </button>
+        {disabled ? (
+          <div>
+            <p>You have reached the end of the products</p>
+          </div>
+        ) : null}
       </div>
     </div>
   );
