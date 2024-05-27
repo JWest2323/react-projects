@@ -4,6 +4,8 @@ import ImageCarousel from './components/image-carousel/ImageCarousel';
 import RandomColor from './components/random-color/RandomColor';
 import StarRating from './components/star-rating/StarRating';
 import LoadMoreButton from './components/load-more-button/LoadMoreButton';
+import NavigationMenu from './components/navigation-menu/NavigationMenu';
+import { menus } from "./components/navigation-menu/data";
 
 const App = () => {
   return (
@@ -14,7 +16,9 @@ const App = () => {
 
       {/* <ImageCarousel query='deep space' /> */}
 
-      <LoadMoreButton />
+      {/* <LoadMoreButton /> */}
+      
+      <NavigationMenu menus={menus} />
     </div>
   )
 }

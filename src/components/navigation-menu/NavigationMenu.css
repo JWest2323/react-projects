@@ -1,0 +1,22 @@
+.nav-menu-container {
+  min-height: 100vh;
+  width: 350px;
+  background: rgb(0, 71, 110);
+}
+
+.menu-list-container {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.menu-label {
+  color: white;
+}
+
+.menu-label-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex: wrap;
+  cursor: pointer;
+}
