@@ -6,6 +6,7 @@ import StarRating from './components/star-rating/StarRating';
 import LoadMoreButton from './components/load-more-button/LoadMoreButton';
 import NavigationMenu from './components/navigation-menu/NavigationMenu';
 import { menus } from "./components/navigation-menu/data";
+import QRCodeGenerator from './components/qr-code-generator/QRCodeGenerator';
 
 const App = () => {
   return (
@@ -18,7 +19,8 @@ const App = () => {
 
       {/* <LoadMoreButton /> */}
       
-      <NavigationMenu menus={menus} />
+      {/* <NavigationMenu menus={menus} /> */}
+      <QRCodeGenerator />
     </div>
   )
 }
