@@ -7,6 +7,7 @@ import LoadMoreButton from './components/load-more-button/LoadMoreButton';
 import NavigationMenu from './components/navigation-menu/NavigationMenu';
 import { menus } from "./components/navigation-menu/data";
 import QRCodeGenerator from './components/qr-code-generator/QRCodeGenerator';
+import LightDarkMode from './components/light-dark-mode/LightDarkMode';
 
 const App = () => {
   return (
@@ -20,7 +21,9 @@ const App = () => {
       {/* <LoadMoreButton /> */}
       
       {/* <NavigationMenu menus={menus} /> */}
-      <QRCodeGenerator />
+      {/* <QRCodeGenerator /> */}
+
+      <LightDarkMode />
     </div>
   )
 }
