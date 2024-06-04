@@ -9,6 +9,7 @@ import { menus } from "./components/navigation-menu/data";
 import QRCodeGenerator from "./components/qr-code-generator/QRCodeGenerator";
 import LightDarkMode from "./components/light-dark-mode/LightDarkMode";
 import ScrollProgressBar from "./components/scroll-progress-bar/ScrollProgressBar";
+import TabsContainer from "./components/custom-tabs/TabsContainer";
 
 const App = () => {
   return (
@@ -26,7 +27,9 @@ const App = () => {
 
       {/* <LightDarkMode /> */}
 
-      <ScrollProgressBar url={"https://dummyjson.com/products?limit=100"} />
+      {/* <ScrollProgressBar url={"https://dummyjson.com/products?limit=100"} /> */}
+
+      <TabsContainer />
     </div>
   );
 };
