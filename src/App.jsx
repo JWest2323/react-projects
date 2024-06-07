@@ -10,6 +10,7 @@ import QRCodeGenerator from "./components/qr-code-generator/QRCodeGenerator";
 import LightDarkMode from "./components/light-dark-mode/LightDarkMode";
 import ScrollProgressBar from "./components/scroll-progress-bar/ScrollProgressBar";
 import TabsContainer from "./components/custom-tabs/TabsContainer";
+import ModalTest from "./components/modal-popup/ModalTest";
 
 const App = () => {
   return (
@@ -29,7 +30,9 @@ const App = () => {
 
       {/* <ScrollProgressBar url={"https://dummyjson.com/products?limit=100"} /> */}
 
-      <TabsContainer />
+      {/* <TabsContainer /> */}
+
+      <ModalTest />
     </div>
   );
 };
