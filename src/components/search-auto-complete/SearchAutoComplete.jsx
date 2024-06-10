@@ -46,13 +46,10 @@ const SearchAutoComplete = () => {
   };
 
   const handleClick = (event) => {
-    console.log(event.target.innerText);
     setShowDropdown(false);
     setSearchParam(event.target.innerText);
     setFilteredUsers([]);
   };
-
-  console.log(users, filteredUsers);
 
   useEffect(() => {
     fetchUsers();
