@@ -12,6 +12,7 @@ import ScrollProgressBar from "./components/scroll-progress-bar/ScrollProgressBa
 import TabsContainer from "./components/custom-tabs/TabsContainer";
 import ModalTest from "./components/modal-popup/ModalTest";
 import GithubProfileFinder from "./components/github-profile-finder/GithubProfileFinder";
+import SearchAutoComplete from "./components/search-auto-complete/SearchAutoComplete";
 
 const App = () => {
   return (
@@ -35,7 +36,9 @@ const App = () => {
 
       {/* <ModalTest /> */}
 
-      <GithubProfileFinder />
+      {/* <GithubProfileFinder /> */}
+
+      <SearchAutoComplete />
     </div>
   );
 };
