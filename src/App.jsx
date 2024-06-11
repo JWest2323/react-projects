@@ -13,6 +13,7 @@ import TabsContainer from "./components/custom-tabs/TabsContainer";
 import ModalTest from "./components/modal-popup/ModalTest";
 import GithubProfileFinder from "./components/github-profile-finder/GithubProfileFinder";
 import SearchAutoComplete from "./components/search-auto-complete/SearchAutoComplete";
+import TicTacToe from "./components/tic-tac-toe/TicTacToe";
 
 const App = () => {
   return (
@@ -38,7 +39,9 @@ const App = () => {
 
       {/* <GithubProfileFinder /> */}
 
-      <SearchAutoComplete />
+      {/* <SearchAutoComplete /> */}
+
+      <TicTacToe />
     </div>
   );
 };
