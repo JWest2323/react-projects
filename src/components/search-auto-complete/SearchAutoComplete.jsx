@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./SearchAutoComplete.css";
 import Suggestions from "./Suggestions";
 
 const SearchAutoComplete = () => {
