@@ -14,12 +14,16 @@ import ModalTest from "./components/modal-popup/ModalTest";
 import GithubProfileFinder from "./components/github-profile-finder/GithubProfileFinder";
 import SearchAutoComplete from "./components/search-auto-complete/SearchAutoComplete";
 import TicTacToe from "./components/tic-tac-toe/TicTacToe";
+import FeatureFlagGlobalState from "./components/feature-flag/context/FeatureFlagGlobalState";
+import FeatureFlag from "./components/feature-flag/FeatureFlag";
 
 const App = () => {
   return (
     <div>
       {/* <Accordion /> */}
+      
       {/* <RandomColor /> */}
+
       {/* <StarRating numOfStars={8} /> */}
 
       {/* <ImageCarousel query='deep space' /> */}
@@ -27,6 +31,7 @@ const App = () => {
       {/* <LoadMoreButton /> */}
 
       {/* <NavigationMenu menus={menus} /> */}
+
       {/* <QRCodeGenerator /> */}
 
       {/* <LightDarkMode /> */}
@@ -41,7 +46,11 @@ const App = () => {
 
       {/* <SearchAutoComplete /> */}
 
-      <TicTacToe />
+      {/* <TicTacToe /> */}
+
+      <FeatureFlagGlobalState>
+        <FeatureFlag />
+      </FeatureFlagGlobalState>
     </div>
   );
 };
