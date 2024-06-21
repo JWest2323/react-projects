@@ -17,6 +17,7 @@ import TicTacToe from "./components/tic-tac-toe/TicTacToe";
 import FeatureFlagGlobalState from "./components/feature-flag/context/FeatureFlagGlobalState";
 import FeatureFlag from "./components/feature-flag/FeatureFlag";
 import UseFetchHookTest from "./customHooks/use-fetch/test";
+import UseEscapeTest from "./customHooks/use-escape/test";
 
 
 const App = () => {
@@ -54,7 +55,9 @@ const App = () => {
         <FeatureFlag />
       </FeatureFlagGlobalState> */}
 
-      <UseFetchHookTest />
+      {/* <UseFetchHookTest /> */}
+
+      <UseEscapeTest />
     </div>
   );
 };
