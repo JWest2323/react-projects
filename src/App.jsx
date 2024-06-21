@@ -18,6 +18,7 @@ import FeatureFlagGlobalState from "./components/feature-flag/context/FeatureFla
 import FeatureFlag from "./components/feature-flag/FeatureFlag";
 import UseFetchHookTest from "./customHooks/use-fetch/test";
 import UseEscapeTest from "./customHooks/use-escape/test";
+import UseResponsiveTest from "./customHooks/use-responsive/test";
 
 
 const App = () => {
@@ -57,7 +58,9 @@ const App = () => {
 
       {/* <UseFetchHookTest /> */}
 
-      <UseEscapeTest />
+      {/* <UseEscapeTest /> */}
+
+      <UseResponsiveTest />
     </div>
   );
 };
